@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlitzAgent — Autonomous Browser Intelligence</title>
+    <meta name="description" content="BlitzAgent is an AI-powered browser automation agent. Describe any web task in natural language and let it handle the rest." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <!-- ================================================================
+         LANDING PAGE
+    ================================================================ -->
+    <div id="landing" class="page">
+
+      <!-- Ambient background -->
+      <div class="ambient" aria-hidden="true">
+        <div class="orb orb-purple"></div>
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-teal"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <!-- NAV -->
+      <nav class="nav">
+        <div class="nav-inner">
+          <a href="#" class="brand">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="color:#A78BFA"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            BlitzAgent
+          </a>
+          <div class="nav-center">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How it works</a>
+            <span class="nav-tag">✦ Byte Blitz 2026</span>
+          </div>
+          <div class="nav-right">
+            <button class="btn btn-primary" id="navGetStarted">Get Started →</button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO -->
+      <section class="hero container">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          Powered by Mercury LLM &mdash; Autonomous AI Reasoning
+        </div>
+
+        <h1 class="hero-h1">
+          Your AI<br />
+          <span class="text-gradient">Browser Agent.</span>
+        </h1>
+
+        <p class="hero-sub">
+          Describe any web task in plain English. BlitzAgent navigates websites,
+          fills forms, clicks buttons, and returns results — completely on its own.
+        </p>
+
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" id="heroGetStarted">
+            Start automating — it's free
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="#how-it-works" class="btn btn-ghost btn-lg">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            See how it works
+          </a>
+        </div>
+
+        <div class="hero-pills">
+          <span class="pill">✓ Up to 25 autonomous steps</span>
+          <span class="pill">✓ Real-time screenshots</span>
+          <span class="pill">✓ Auto error recovery</span>
+          <span class="pill">✓ Natural language control</span>
+        </div>
+
+        <!-- Terminal preview -->
+        <div class="terminal-card">
+          <div class="terminal-bar">
+            <span class="term-dot dot-red"></span>
+            <span class="term-dot dot-yellow"></span>
+            <span class="term-dot dot-green"></span>
+            <span class="terminal-title">BlitzAgent — Live Run</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line">
+              <span class="t-prompt">$</span>
+              <span class="t-cmd">Task: Go to GitHub, search for "playwright", open the first result</span>
+            </div>
+            <div class="t-line t-info">→ Step 1: navigate(https://github.com) ✓</div>
+            <div class="t-line t-info">→ Step 2: fill(search-input, "playwright") ✓</div>
+            <div class="t-line t-info">→ Step 3: click(submit-button) ✓</div>
+            <div class="t-line t-info">→ Step 4: click(first-result) ✓</div>
+            <div class="t-line t-success">✓ Task completed in 4 steps · 1.2k tokens</div>
+            <div class="t-cursor">_</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <div class="stats-bar container">
+        <div class="stat">
+          <span class="stat-n">25</span>
+          <span class="stat-l">Max steps per task</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-n">3×</span>
+          <span class="stat-l">Auto-recovery retries</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-n">100%</span>
+          <span class="stat-l">Natural language</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-n">∞</span>
+          <span class="stat-l">Concurrent sessions</span>
+        </div>
+      </div>
+
+      <!-- FEATURES -->
+      <section id="features" class="section container">
+        <div class="section-eyebrow">Capabilities</div>
+        <h2 class="section-h2">Everything you need to automate the web</h2>
+        <p class="section-sub">Powered by Mercury LLM's advanced reasoning engine, BlitzAgent handles complex multi-step tasks with precision and reliability.</p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>Natural Language Control</h3>
+            <p>Describe tasks in plain English. No selectors, no scripting — just tell BlitzAgent what you want and it figures out the rest.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Autonomous Form Filling</h3>
+            <p>Automatically fills inputs, selects dropdowns, checks boxes, and submits forms across any website without manual intervention.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📸</div>
+            <h3>Screenshot Evidence</h3>
+            <p>Captures screenshots at each step, giving you a complete visual audit trail of every action the agent took.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔄</div>
+            <h3>Smart Error Recovery</h3>
+            <p>Detects failures, understands what went wrong, and automatically attempts recovery strategies — up to 3 retries per step.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📊</div>
+            <h3>Real-time Timeline</h3>
+            <p>Watch every action unfold in real-time. Each step is logged with action type, result, tokens used, and timing.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3>Async Task Engine</h3>
+            <p>Submit tasks and get on with your work. Poll for results anytime or stream live progress through the chat interface.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section id="how-it-works" class="section container">
+        <div class="section-eyebrow">Process</div>
+        <h2 class="section-h2">From prompt to result in seconds</h2>
+        <p class="section-sub">Three simple steps. No setup, no configuration, no code required.</p>
+
+        <div class="steps-row">
+          <div class="step-item">
+            <div class="step-num">01</div>
+            <h3>Describe your task</h3>
+            <p>Open the chat and tell BlitzAgent what you want done in plain English — like "go to LinkedIn and search for AI engineers in Seattle".</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-item">
+            <div class="step-num">02</div>
+            <h3>Agent takes control</h3>
+            <p>BlitzAgent reads the page, reasons about the best actions, executes them one by one, and recovers from any errors it encounters.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-item">
+            <div class="step-num">03</div>
+            <h3>Get your results</h3>
+            <p>View the completed task with a full step-by-step timeline, screenshots of each action, and any data that was extracted.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-section">
+        <div class="cta-inner container">
+          <div class="cta-glow"></div>
+          <h2>Ready to automate your first task?</h2>
+          <p>No setup required. Just describe what you want and let BlitzAgent handle the rest.</p>
+          <button class="btn btn-primary btn-xl" id="ctaGetStarted">
+            Launch BlitzAgent
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer container">
+        <div class="footer-brand">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#A78BFA"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          BlitzAgent
+        </div>
+        <p class="footer-text">Byte Blitz 2026 &mdash; Autonomous Browser Intelligence</p>
+      </footer>
+
+    </div><!-- /landing -->
+
+
+    <!-- ================================================================
+         CHAT APPLICATION
+    ================================================================ -->
+    <div id="chatApp" class="chat-app" aria-hidden="true">
+
+      <!-- Sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-top">
+          <div class="sidebar-logo">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="color:#A78BFA"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            BlitzAgent
+          </div>
+          <button class="sidebar-new" id="newChatBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+            New chat
+          </button>
+        </div>
+
+        <div class="sidebar-section-label">Recent</div>
+        <div class="sidebar-chats" id="sidebarChats">
+          <div class="sidebar-empty">Your conversations will appear here</div>
+        </div>
+
+        <div class="sidebar-bottom">
+          <button class="sidebar-back-btn" id="backBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            Back to home
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main Chat Area -->
+      <main class="chat-main">
+
+        <!-- Chat Header -->
+        <header class="chat-header">
+          <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+          <span class="chat-model">
+            <span class="status-dot live" id="connDot"></span>
+            BlitzAgent &middot; Mercury LLM
+          </span>
+          <div class="chat-header-right">
+            <span class="api-badge" id="apiStatus">● API Online</span>
+          </div>
+        </header>
+
+        <!-- Messages -->
+        <div class="messages" id="messages">
+          <!-- Welcome screen rendered by JS -->
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+          <div class="input-box">
+            <textarea
+              id="msgInput"
+              class="msg-input"
+              placeholder="Message BlitzAgent... (Shift+Enter for new line)"
+              rows="1"
+              maxlength="4000"
+            ></textarea>
+            <button class="send-btn" id="sendBtn" disabled aria-label="Send message">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+            </button>
+          </div>
+          <p class="input-note">BlitzAgent can make mistakes. Verify important results independently.</p>
+        </div>
+
+      </main>
+    </div><!-- /chatApp -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
