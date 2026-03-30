@@ -4,6 +4,7 @@
  * Structured logging with Winston. Outputs to console + log files.
  * Each task gets its own log context.
  */
+// importing dotenv
 
 import winston from 'winston';
 import { mkdirSync, existsSync } from 'fs';
